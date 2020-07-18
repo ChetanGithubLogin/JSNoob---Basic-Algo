@@ -61,3 +61,33 @@ function checkPrimeBetterFun(n){
 
 console.log(checkPrimeBetterFun(8));
 
+
+// Find all prime Number 
+function findAllPrimeFactor(n){
+  let diviser = 2;
+  let arr = []
+ while(n > 2){
+   if(n % diviser === 0){
+       arr.push(diviser);
+       n = n/diviser;
+   }else{
+    diviser ++
+   }
+ }
+ return arr;
+}
+
+console.log(findAllPrimeFactor(69))
+
+
+// fibonacci series
+
+function fibo(n){
+  if(n<=1){
+    return n;
+  }else{
+    return fibo(n-1) + fibo(n-2);
+  }
+}
+
+console.log(fibo(10))
