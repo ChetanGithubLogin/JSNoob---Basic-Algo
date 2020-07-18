@@ -91,3 +91,15 @@ function fibo(n){
 }
 
 console.log(fibo(10))
+
+
+// greatest common diviser
+
+function GCD(a,b){
+  if(b == 0){
+    return a;
+  }else {
+    return GCD(b,a%b);
+  }
+}
+console.log(GCD(5,225))
