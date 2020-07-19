@@ -103,3 +103,24 @@ function GCD(a,b){
   }
 }
 console.log(GCD(5,225))
+
+/// Bubble sort 
+var  a = [1,3,2,1,4,8,5,7,6]
+
+function BubbleSort(a){
+  var flag=false;
+  while(!flag){
+    flag= true;
+    for(var i = 1 ; a.length > i ; i++){
+      if(a[i-1]> a[i]){
+           flag = false;
+           var temp = a[i-1];
+           a[i-1]= a[i];
+           a[i]= temp;
+      }
+    }
+  }
+  return a;
+}
+
+console.log(BubbleSort(a));
